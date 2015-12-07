@@ -5,25 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Portfolio</title>
+		<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+		<link rel="import" href="templates/logo.html">
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom.css after bootstrap.css to override -->
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
-	<body>
 
+	<body>
 		<div class="container">
 
 			<!-- Logo and Site Title -->
-			<div class="row">
-				<div class="col-xs-12 col-sm-2">
-					<img class="img-responsive" src="imgs/logo.png" alt="Logo">
-				</div>
-				<div class="col-xs-12 col-sm-10 text-right text-uppercase">
-					<h1>Christian</h1>
-					<h4 class="text-thin">Some Fake Portfolio Site</h4>
-				</div>
-			</div>
+			<logo-and-title></logo-and-title>
 
 			<!-- Separator -->
 			<div class="row">
