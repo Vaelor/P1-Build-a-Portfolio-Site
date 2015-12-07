@@ -8,10 +8,10 @@ body {
 }
 
 
+/* Text */
 .text-muted {
-    color: #666;
+    color: #888;
 }
-
 
 .text-thin {
     font-weight: 300;
