@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300);
+
+/* Body */
+body {
+    background-color: #222;
+    color: #ccc;
+    font: 400 100% 'Nunito', sans-serif;
+}
+
+
+.text-muted {
+    color: #666;
+}
+
+
+.text-thin {
+    font-weight: 300;
+}
+

@@ -1,28 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom.css after bootstrap.css to override -->
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+	<body>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<div class="container">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+			<!-- Logo and Site Title -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-2">
+					<img class="img-responsive" src="imgs/logo.png" alt="Logo">
+				</div>
+				<div class="col-xs-12 col-sm-10 text-right text-uppercase">
+					<h1>Christian</h1>
+					<h4 class="text-thin">Some Fake Portfolio here</h4>
+				</div>
+			</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+			<!-- Separator -->
+			<div class="row">
+				<div class="col-xs-12">
+					<hr>
+				</div>
+			</div>
+
+			<!-- Main Image -->
+			<div class="row">
+				<div class="col-xs-12">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="imgs/large/main.jpg">
+						<source media="(min-width: 992px)" srcset="imgs/medium/main_medium.jpg">
+						<img class="img-responsive" src="imgs/small/main_small.jpg" alt="Image of a sunset"
+							 data-toggle="modal" data-target="#modalMainImage">
+					</picture>
+				</div>
+			</div>
+
+			<!-- modalMainImage -->
+			<div class="modal fade" id="modalMainImage" tabindex="-1" role="dialog" aria-labelledby="modalMainImageLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h4 class="modal-title text-capitalize" id="modalMainImageLabel">Sunset</h4>
+						</div>
+						<div class="modal-body">
+							<article>
+								<header>
+									<h2 class="text-capitalize">View from a roof</h2>
+									<picture>
+										<source media="(min-width: 1200px)" srcset="imgs/large/main.jpg">
+										<source media="(min-width: 992px)" srcset="imgs/medium/main_medium.jpg">
+										<img class="img-responsive" src="imgs/small/main_small.jpg" alt="Image of a sunset">
+									</picture>
+								</header>
+								<p class="text-right">Taken from the roof of the house I grew up in</p>
+								<section>
+									<h3>The story behind the picture</h3>
+									<p>
+										This sunset was taken on 06.07.2008, from the roof of the house I grew up in.<br>
+										Sadly, there aren't any additional interesting details to this picture other then that.<br>
+										I just climbed up to the roof one day, with the intention of taking a picture of a beautiful sunset.
+									</p>
+									<p>
+										I hope you didn't expect a story more interesting!
+									</p>
+								</section>
+							</article>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Header-->
+			<div class="row">
+				<div class="col-xs-12 text-left text-muted">
+					<h2>More Pictures! <small>They have tooltips, awesome!</small></h2>
+				</div>
+			</div>
+
+			<!-- Smaller Images with tooltips -->
+			<div class="row text-center">
+				<div class="col-xs-6">
+					<picture>
+						<source media="(min-width: 768px)" srcset="imgs/small/ground.jpg">
+						<img class="img-responsive" src="imgs/extra_small/ground_extra_small.jpg" alt="Ground Image"
+								 data-toggle="tooltip" data-placement="top" title="Some very dry ground">
+					</picture>
+					<h3 class="text-uppercase text-thin">Ground</h3>
+					<a href="https://github.com/Vaelor/P1-Build-a-Portfolio-Site">github.com/Vaelor</a>
+					<hr>
+				</div>
+				<div class="col-xs-6">
+					<picture>
+						<source media="(min-width: 768px)" srcset="imgs/small/flowers.jpg">
+						<img class="img-responsive" src="imgs/extra_small/flowers_extra_small.jpg" alt="Flower Image"
+								 data-toggle="tooltip" data-placement="top" title="Nice looking purple flowers">
+					</picture>
+					<h3 class="text-uppercase text-thin">Flowers</h3>
+					<a href="https://github.com/Vaelor/P1-Build-a-Portfolio-Site">github.com/Vaelor</a>
+					<hr>
+				</div>
+				<div class="col-xs-6">
+					<picture>
+						<source media="(min-width: 768px)" srcset="imgs/small/landscape.jpg">
+						<img class="img-responsive" src="imgs/extra_small/landscape_extra_small.jpg" alt="Landscape Image"
+								 data-toggle="tooltip" data-placement="top" title="What a view!">
+					</picture>
+					<h3 class="text-uppercase text-thin">Landscape</h3>
+					<a href="https://github.com/Vaelor/P1-Build-a-Portfolio-Site">github.com/Vaelor</a>
+					<hr>
+				</div>
+				<div class="col-xs-6">
+					<picture>
+						<source media="(min-width: 768px)" srcset="imgs/small/clouds.jpg">
+						<img class="img-responsive" src="imgs/extra_small/clouds_extra_small.jpg" alt="Cloud Image"
+								 data-toggle="tooltip" data-placement="top" title="Can you see what they look like?">
+					</picture>
+					<h3 class="text-uppercase text-thin">Clouds</h3>
+					<a href="https://github.com/Vaelor/P1-Build-a-Portfolio-Site">github.com/Vaelor</a>
+					<hr>
+				</div>
+			</div>
+
+			<!-- License information -->
+			<div class="row">
+				<div class="col-xs-12 text-right">
+					<footer>
+						Nature graphic by <a href="http://www.greepit.com">Sarfraz Shoukat</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+					</footer>
+				</div>
+			</div>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="js/jquery.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/index.js"></script>
+
+		</div>
+	</body>
+
 </html>
